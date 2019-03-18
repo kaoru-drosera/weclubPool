@@ -1,0 +1,97 @@
+<!DOCTYPE html><!-- この文章はHTMLで書かれてるよ、という印 -->
+<html><!-- htmlタグの始点。 --><!--大なり小なりで囲まれたもの。これが、「タグ」。*/ -->
+  <head><!-- へっだー部　-->
+   <meta charset="uft-8">
+   <!-- HTMLタグは、「ここからここまでHTMLの内容を書きますよ、という印。」 -->
+  <title>ページタイトル7</title>
+  </head>
+  <body><!--画面内に表示されるもの。　-->
+    <h1>ホームページ7の見出し</h1>
+    <p>ホームページ7が完成しました！</p><!--パラグラフ＝段落-->
+    <form action="">
+      <!-- お問い合わせフォームやユーザー登録で利用されている。 -->
+      <!-- 実際表示させたいフォームは、formタグの中に保存する。 -->
+      <p>email</p>
+      <input type="text" name="email">
+      <!--
+      type="text" を用いたinputタグを使うことで、
+      「テキストフォーム」が作れるようになる。
+
+      フォームには一つ一つ「name=""」で名前をつけられる。
+     -->
+      <p>PASSWORD</p>
+      <input type="text" name="pass"><br>
+      <!-- フォームが終わったので、チェックボックス(他諸々)を作るよー！ -->
+
+      <input type="checkbox" name="pref[]" value="1">東京
+      <input type="checkbox" name="pref[]" value="2">神奈川
+      <input type="checkbox" name="pref[]" value="3">千葉
+      <input type="checkbox" name="pref[]" value="4">埼玉
+      <input type="checkbox" name="pref[]" value="3">群馬
+      <br>
+      <!-- チェックボックスもinputを使う。
+      typeをcheckboxとすることでチェックボックスとするのだ。
+      ここにvalue属性を付けることで、フォームに「値を持たせる」ことが可能だ。
+      valueの値は数値でも文字でもなんでもよし。
+       -->
+       <!-- name属性を同じにすることで、「それが１つのグループのチェックボックスなのだ」
+     とすることができる。
+            チェックボックスをグループ分けしたい場合には同グループのものの
+            名前を同じにするといい。
+    -->
+      <!-- nameの後の[]はおそらく変数が関わってくるのでは…？ -->
+      <!-- チェックボックスここまでー！ -->
+
+      <!-- ラジオボタンを作るよー！ -->
+
+      <input type="radio" name="gender" value="1">男性
+      <input type="radio" name="gender" value="2">女性
+      <input type="radio" name="gender" value="3">トキ
+      <input type="radio" name="e" value="3">E
+      <br>
+      <!-- typeをラジオとすることでラジオボタンに。
+          チェックボックスと同様、valueで値を持たせ、nameを同じにすることで
+        グループ分けすることが可能だ。
+        グループ分けすることで、「どれか１つ選べる」状態にすることができる。
+        現に、グループ名が違う「E」は、genderのボタンのうち１つが選ばれていても
+        同時に選ぶことができてしまう。
+      -->
+      <!-- ラジオボタンここまでー！ -->
+
+      <!-- セレクトボックスを作るよー！ -->
+
+      <select name="blood" id="">
+        <option value="A">A型</option>
+        <option value="B">B型</option>
+        <option value="O">O型</option>
+        <option value="AB">AB型</option>
+      </select>
+      <br>
+      <!-- セレクトボックスを作るには「select」タグを作り、
+      内容には「option」タグを入れる必要がある。 -->
+      <!-- セレクトボックスここまでー！ -->
+
+      <!-- テキストエリアを作るよー！ -->
+
+      <textarea name="comments" id="" cols="30" rows="10" placeholder="コメントあればご自由に">
+
+      </textarea>
+      <br>
+      <!-- テキストエリアにはinputは使わない。
+    colsとrowsは、それぞれ横幅と縦幅を示す。
+        よって、上記コードは「横30字分、縦10行分」という意味になる。 -->
+        <!-- 余談ながら、<textarea></textarea>の間に文字を入れると、
+        ホームページ表示時にあらかじめその文字が入るようになる。 -->
+      <!-- テキストエリアここまでー！ -->
+
+      <input type="submit" name="submit" value="submit -送信-">
+      <!-- typeにsubmitを指定することで、「送信ボタン」となる。 -->
+      <!-- こうしてvalueで受け取った値をPHPが受け取るんだな -->
+    </form>
+
+  </body><!--画面内に表示されるものここまで。　-->
+</html><!-- 先頭に/があるhtmlタグが、htmlタグの終点。始点から終点で１セット。 -->
+<!-- <!DOCTYPE html>でHTMLの宣言。htmlタグで、実際に内容を書いていく。 -->
+<!-- head部分で、画面に表示されない内部設定や、ページタイトルを書いていく。
+そしてbody部で表示されるもの,タイトルや文字を書いていく。 -->
+
