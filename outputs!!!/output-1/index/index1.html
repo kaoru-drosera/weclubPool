@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>アウトプット</title>
+  <link rel="stylesheet" type="text/css" href="../style/style-1.css">
+</head>
+<body>
+  <div class="container">
+    <h1>ウェブカツ・インプット集</h1>
+    <h2>リストを作る&リンクを貼る</h2>
+    <ul>
+      <li><a href="#weClub_table">表を作ってみる</a></li>
+      <li><a href="#weClub_form">フォームを作ってみる</a></li>
+      <li><a href=""></a></li>
+      <li><a href=""></a></li>
+    </ul>
+    <h2>表を作ってみる</h2>
+    <table id="weClub_table" class="table1" border="1">
+      <tr><th class="tablettl" colspan="4">レッスン一覧</th></tr>
+      <tr><th>レッスン名</th><th>価格</th><th>期間</th><th>備考</th></tr>
+      <tr><td>体験コース</td><td>無料</td><td>1週間</td><td>受講者に有料コースの割引あり</td></tr>
+      <tr><td>初級コース</td><td>1万円</td><td>3ヶ月</td><td rowspan="2">なし</td></tr>
+      <tr><td>実践コース</td><td>3万円</td><td>5ヶ月</td></tr>
+      <tr><td>短期集中コース</td><td>3万円</td><td>1ヶ月</td><td>就職支援１ヶ月ボーナス</td></tr>
+    </table>
+
+    <h2>フォームを作ってみる</h2>
+
+    <form id="weClub_form" class="contactForm" action="get">
+      <!-- テキストボックス -->
+      <div class="fieSet_wrap">
+        <label class="mailAddress" for="mail">メールアドレス<br><input id="mail" type="text" name="mail"></label>
+      </div>
+
+
+    <div class="fieSet_wrap">
+      <fieldset>
+        <legend>性別(必ずご入力ください)</legend>
+        <input type="radio" name="gender" value="1" id="male" checked><label for="male">男性</label>
+        <input type="radio" name="gender" value="2" id="fam"><label for="fam">女性</label>
+        <input type="radio" name="other" value="3" id="vergin"><label for="vergin">行き遅れ</label>
+        <input type="radio" name="other" value="3" id="momfxxker"><label for="momfxxker">非モテ</label>
+      </fieldset>
+    </div>
+
+    <div class="fieSet_wrap">
+      <fieldset>
+        <legend>属性</legend>
+        <input type="checkbox" name="elem[]" id="flame" value="flame"><label for="flame">火</label>
+        <input type="checkbox" name="elem[]" id="aqua" value="aqua"><label for="aqua">水</label>
+        <input type="checkbox" name="elem[]" id="air" value="air"><label for="air">空</label>
+        <input type="checkbox" name="elem[]" id="rand" value="rand"><label for="rand">地</label>
+        <input type="checkbox" name="elem[]" id="metal" value="metal"><label for="metal">金</label>
+        <input type="checkbox" name="elem[]" id="right" value="right" checked><label for="right">光</label>
+        <input type="checkbox" name="elem[]" id="dark" value="dark"><label for="dark">闇</label>
+      </fieldset>
+    </div>
+
+    <div class="fieSet_wrap">
+      <label for="weapon">使用武器</label>
+      <select name="weapon" id="weapon">
+        <option value="thord" id="thord">剣</option>
+        <option value="spear" id="spear">槍</option>
+        <option value="ax" id="ax">斧</option>
+        <option value="magic" id="magic">魔法</option>
+        <option value="arrow" id="arrow">弓矢</option>
+        <option value="dDevide" id="dDevide">暗器</option>
+      </select>
+    </div>
+
+
+      <fieldset>
+        <legend>希望するレッスン(必ずご入力ください)</legend>
+        <input type="radio" name="lesson" value="1" id="pre"><label for="pre">体験コース</label>
+        <input type="radio" name="lesson" value="1" id="easy"><label for="easy">初級コース</label>
+        <input type="radio" name="lesson" value="1" id="normal"><label for="normal">実践コース</label>
+        <input type="radio" name="lesson" value="1" id="normalPlus"><label for="normalPlus">短期集中コース</label>
+      </fieldset>
+
+      <!-- コメント -->
+      <div class="fieSet_wrap">
+        <label for="commentHere">
+          <legend>コメント</legend>
+          <textarea name="commentHere" id="commentHere" cols="30" rows="10" placeholder="コメントあればここへお願いします"></textarea>
+        </label>
+      </div>
+
+
+      <div>
+        <input class="submit-1" type="submit" name="submit" value="送信する！">
+      </div>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  list-style: none;
+}
+h1{
+  text-align: center;
+}
+h2{
+  text-align: center;
+  background-color: #666;
+  color: #fff;
+  margin: 30px 0;
+}
+.table1{
+  margin: auto;
+}
+.container{
+  max-width: 800px;
+  margin: auto;
+  padding: 40px 80px;
+}
+.contactForm p,
+.mailAddress{
+  display: block;
+}
+.fieSet_wrap{
+  padding: 10px 0 10px;
+}
+.tablettl{
+  font-weight: bold;
+  color: #f0f;
+}
+.contactForm{
+  background-color: rgb(243, 203, 246);
+}
+
+.submit-1{
+  padding: 12px 30px;
+  background-color: #fff;
+  color: #888;
+  font-size: 12px;
+}
