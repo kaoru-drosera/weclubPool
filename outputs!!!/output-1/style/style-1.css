@@ -2,6 +2,9 @@
   margin: 0;
   list-style: none;
 }
+a{
+  text-decoration: none;
+}
 h1{
   text-align: center;
 }
@@ -11,13 +14,50 @@ h2{
   color: #fff;
   margin: 30px 0;
 }
-.table1{
-  margin: auto;
-}
 .container{
   max-width: 800px;
   margin: auto;
-  padding: 40px 80px;
+  padding: 40px 80px 0;
+}
+.topBar{
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #d4d4d4;
+}
+.topBar h2{
+  margin: 0;
+}
+.topBar_link{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+.topBar_link li{
+  float: left;
+  margin: 0 10px 0;
+}
+.topBar_link a{
+  font-weight: bold;
+  color: #fff;
+}
+.topBar_link a:hover{
+  color: #d4d4d4;
+  background-color: #fff;
+  transition: .5s;
+}
+.topBar_link a:active{
+  color: #fff;
+  background-color: #d4d4d4;
+}
+.topBar_ttl{
+  float: left;
+}
+.table1{
+  margin: auto;
 }
 .contactForm p,
 .mailAddress{
