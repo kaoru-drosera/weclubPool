@@ -44,11 +44,11 @@ h2{
 .topBar_link a{
   font-weight: bold;
   color: #fff;
+  transition: .5s;
 }
 .topBar_link a:hover{
   color: #d4d4d4;
   background-color: #fff;
-  transition: .5s;
 }
 .topBar_link a:active{
   color: #fff;
