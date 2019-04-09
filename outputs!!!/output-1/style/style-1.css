@@ -81,3 +81,24 @@ h2{
   color: #888;
   font-size: 12px;
 }
+
+.linklist {
+  font-size: 16px;
+}
+.linklist li{
+  padding: 10px 0;
+}
+.linklist a{
+  color: #000;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+;
