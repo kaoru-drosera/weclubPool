@@ -113,8 +113,8 @@ input#submit-1[type="submit"]{
 }
 
 .clearfix::after{
-  content: "";
   clear: both;
+  content: "";
   display: block;
 
 }
@@ -148,7 +148,14 @@ input#submit-1[type="submit"]{
   margin: 30px 0;
 } */
 
-
+/* .cfTest::after{
+  content: "";
+  clear: both;
+  display: block;
+} */
+.cfTest li{
+  float: left;
+}
 
 
 
