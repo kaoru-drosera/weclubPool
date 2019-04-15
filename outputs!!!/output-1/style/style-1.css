@@ -64,6 +64,10 @@ h2{
 .mailAddress{
   display: block;
 }
+
+/* フォーム */
+
+
 .fieSet_wrap{
   padding: 10px 0 10px;
 }
@@ -74,6 +78,46 @@ h2{
 .contactForm{
   background-color: rgb(243, 203, 246);
 }
+
+/* ラジオボタン */
+
+input[type="radio"]{
+  display: none;
+}
+input[type="radio"] + label{
+  padding-left: 20px;
+  position: relative;
+  margin-right: 20px;
+}
+input[type="radio"] + label::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid  #999;
+  border-radius: 50%;
+  background: #fff;
+}
+input[type="radio"]:checked + label{
+  /* color: #999; */
+}
+input[type="radio"]:checked + label::after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 11px;
+  height: 11px;
+  background: #000;
+  border-radius: 50%;
+}
+
+
+/* ラジオボタンここまで */
 
 .submit-1{
   padding: 12px 70px;
@@ -100,6 +144,9 @@ input#submit-1[type="submit"]{
   color: #888;
   font-size: 12px;
 } */
+
+/* フォームここまで */
+
 
 .linklist {
   font-size: 16px;
@@ -158,7 +205,11 @@ input#submit-1[type="submit"]{
 }
 
 
-
+.h2plus + p{
+  transform: rotate(5deg);
+  font-size: 25px;
+  color: red ;
+}
 
 
 
