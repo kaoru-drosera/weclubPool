@@ -247,6 +247,8 @@ input#submit-1[type="submit"]{
 
 .jQcontents{
   height: 50px;
+  margin: auto;
+  width: 75%;
 }
 .jQcontents h4{
   cursor: pointer;
