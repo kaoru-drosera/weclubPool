@@ -1,0 +1,37 @@
+@media(max-width: 848px){
+  /* ↑の@media(max-widthに注目！) */
+  .resptest{
+    font-size: 40px;
+    color: rgb(110, 255, 255);
+  }
+
+  .pc{
+    display: none;
+  }
+  .tb{
+    display: block;
+  }
+  .ph{
+    display: none;
+  }
+
+}
+
+@media(max-width: 478px){
+  .resptest{
+    font-size: 20px;
+    color: rgb(255, 0, 100);
+    border: 1px solid #000;
+  }
+
+  .pc{
+    display: none;
+  }
+  .tb{
+    display: none;
+  }
+  .ph{
+    display: block;
+  }
+
+}
