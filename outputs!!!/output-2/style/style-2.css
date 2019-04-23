@@ -20,10 +20,10 @@
 
 
 .poscont{
-  border: 1px solid #000;
+  border: 10px solid #f00;
   width: 35%;
   height: 300px;
-  overflow-y: scroll;
+  overflow: scroll;
 }
 .coswrap{
   width: 100%;
