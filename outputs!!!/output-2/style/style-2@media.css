@@ -1,5 +1,11 @@
-@media(max-width: 848px){
+@media(max-width: 968px){
   /* ↑の@media(max-widthに注目！) */
+
+  .container{
+    width: 80%;
+    margin: auto;
+  }
+
   .resptest{
     font-size: 40px;
     color: rgb(110, 255, 255);
@@ -13,6 +19,34 @@
   }
   .ph{
     display: none;
+  }
+
+  .poscont{
+    height: 230px;
+  }
+
+  .i2TableWindow{
+    overflow-x: scroll;
+    width: 100%;
+  }
+
+  .HaWrap1{
+    overflow: scroll;
+  }
+  .HaDocs{
+    text-align: center;
+  }
+
+
+}
+
+@media(max-width: 720px){
+  .poscont{
+    height: 150px;
+  }
+
+  .i2ttl{
+    font-size: 20px;
   }
 
 }
@@ -33,5 +67,7 @@
   .ph{
     display: block;
   }
+
+
 
 }
