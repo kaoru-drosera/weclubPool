@@ -4,6 +4,16 @@
 table{
   border-collapse: separate;
 }
+.clearfixDB::after{
+  content: "";
+  clear: both;
+  display: block;
+}
+.clearfix::after{
+  content: "";
+  clear: both;
+  display: block;
+}
 
 .container{
   width: 970px;
@@ -83,7 +93,58 @@ table{
   text-align: center;
 }
 
-
+.tubeContainer{
+  width: 100%;
+  height: auto;
+}
+.tubeContainer2{
+  width: 100%;
+  height: auto;
+}
+.tubeWrapper{
+  width: 100%;
+  margin: auto;
+  display: block;
+}
+.tubeWindow{
+  position: relative;
+  padding-top: 56.25%;
+  margin: auto;
+}
+.tubeWindow2{
+  position: relative;
+  padding-top: 28.25%;
+  margin: auto;
+}
+.tubeWindow iframe,
+.tubeWindow2 iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.windowLeft,
+.windowRight{
+  width: 50%;
+  display: inline-block;
+}
+.windowLeft{
+  float: left;
+}
+.windowRight{
+  float: right;
+}
+/* .tubeWindow{
+  width: 33.33%;
+  height: auto;
+}
+.tubeWindow iframe{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+} */
 
 
 
