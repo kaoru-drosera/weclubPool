@@ -167,13 +167,15 @@
   <div class="iFrameContainer2 clearfix">
     <div class="container">
       <h2 class="i2ttl">youtubeを埋め込む。</h2>
-      <div class="tubeContainer clearfixDB">
-        <div class="tubeWrapper clearfix">
+      <div class="tubeContainer2 clearfixDB">
+        <div class="tubeWrapper2 tubeWrapLeft clearfix">
+          <h4>タイトルテスト</h4>
           <div class="tubeWindow2 windowLeft">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/pOPfFcAw7mI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
-        <div class="tubeWrapper clearfix">
+        <div class="tubeWrapper2 tubeWrapRight clearfix">
+          <h4>タイトルテスト</h4>
           <div class="tubeWindow2 windowRight">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/pOPfFcAw7mI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
@@ -184,6 +186,51 @@
   </div>
 
 
+  <div class="iFrameContainerCheet flexbox">
+    <div class="container">
+      <h2 class="i2ttl">youtubeを埋め込む。(flex使用…。)</h2>
+      <div class="tubeContainerC flexbox">
+        <div class="tubeWrapperC">
+          <div class="tubettlC">
+            <h4>チーとテスト</h4>
+          </div>
+          <div class="tubeWindowC">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/pOPfFcAw7mI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <p>flex縛りは失敗で御座候。</p>
+        </div>
+        <div class="tubeWrapperC">
+          <div class="tubettlC">
+            <h4>チーとテスト</h4>
+          </div>
+          <div class="tubeWindowC">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/pOPfFcAw7mI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <p>flex縛りは失敗で御座候。</p>
+        </div>
+        <div class="tubeWrapperC">
+          <div class="tubettlC">
+            <h4>チーとテスト</h4>
+          </div>
+          <div class="tubeWindowC">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/pOPfFcAw7mI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <p>flex縛りは失敗で御座候。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ↑「youtubeの画面が横並びにならない
+      →親要素が高さを認識しない
+      →d:bを使うと段重ねになってしまう
+  」
+    という問題が発生した。
+
+    原因は、「youtubeとそれに付随する要素の親要素ではなく、
+    youtubeの画面の親要素にfloatをかけていたから」であった。
+ -->
+    
 
 
 

@@ -12,7 +12,11 @@ table{
 .clearfix::after{
   content: "";
   clear: both;
-  display: block;
+}
+.flexbox{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
 }
 
 .container{
@@ -101,38 +105,61 @@ table{
   width: 100%;
   height: auto;
 }
+.tubeContainerC{
+  justify-content: space-between;
+  height: 100%;
+}
 .tubeWrapper{
   width: 100%;
   margin: auto;
+  display: initial;
+}
+.tubeWrapper h4{
   display: block;
 }
-.tubeWindow{
+.tubeWrapperC{
+  position: relative;
+  width: 32%;
+  /* margin: auto; */
+
+}
+.tubeWrapperC h4{
+}
+.tubeWindow,
+.tubeWindow2,
+.tubeWindowC{
   position: relative;
   padding-top: 56.25%;
   margin: auto;
 }
-.tubeWindow2{
+/* .tubeWindow2{
   position: relative;
   padding-top: 28.25%;
   margin: auto;
-}
+} */
 .tubeWindow iframe,
-.tubeWindow2 iframe{
+.tubeWindow2 iframe,
+.tubeWindowC iframe{
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  margin: auto;
 }
 .windowLeft,
 .windowRight{
-  width: 50%;
+  width: 100%;
   display: inline-block;
 }
-.windowLeft{
+.tubeWrapLeft,
+.tubeWrapRight{
+  width: 48%;
+}
+.tubeWrapLeft{
   float: left;
 }
-.windowRight{
+.tubeWrapRight{
   float: right;
 }
 /* .tubeWindow{
